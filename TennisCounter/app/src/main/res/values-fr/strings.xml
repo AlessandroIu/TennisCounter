@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tennis Score Keeper</string>
+
+    <string name="game_for_player_a">Jeu pour le joueur A</string>
+    <string name="set_for_player_a">Set pour le joueur A</string>
+    <string name="game_for_player_b">Jeu pour le joueur B</string>
+    <string name="set_for_player_b">Set pour le joueur B</string>
+    <string name="match_for_player_a">Match pour le joueur A</string>
+    <string name="match_for_player_b">Match pour le joueur B</string>
+
+    <string name="player_a">"Joueur A"</string>
+    <string name="player_b">"Joueur B"</string>
+    <string name="point_button">"Point"</string>
+    <string name="fault_button">"Faute"</string>
+    <string name="reset_button">"Réinitialiser"</string>
+</resources>

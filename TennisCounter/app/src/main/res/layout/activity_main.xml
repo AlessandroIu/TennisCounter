@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#32a018"
+    tools:context="com.example.android.tenniscounter.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/bigLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="@string/player_a"
+                    style="@style/PlayerNameAreaPortrait" />
+
+                <TextView
+                    android:id="@+id/player_a_score"
+                    style="@style/GameScoreAreaPortrait" />
+
+                <TextView
+                    android:id="@+id/player_a_notifications"
+                    style="@style/NotificationAreas" />
+
+                <LinearLayout
+                    style="@style/SetBoxes">
+
+                    <TextView
+                        style="@style/SetsWord" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/player_a_score_set1"
+                            style="@style/SetScore" />
+
+                        <TextView
+                            android:id="@+id/player_a_score_set2"
+                            style="@style/SetScore" />
+
+                        <TextView
+                            android:id="@+id/player_a_score_set3"
+                            style="@style/SetScore" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <Button
+                    style="@style/ButtonsPortrait"
+                    android:onClick="pointForPlayerA"
+                    android:text="@string/point_button" />
+
+                <Button
+                    style="@style/ButtonsPortrait"
+                    android:onClick="faultForPlayerA"
+                    android:text="@string/fault_button" />
+
+
+            </LinearLayout>
+
+            <View
+                style="@style/CentralBarPortrait"/>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="@string/player_b"
+                    style="@style/PlayerNameAreaPortrait" />
+
+                <TextView
+                    android:id="@+id/player_b_score"
+                    style="@style/GameScoreAreaPortrait" />
+
+                <TextView
+                    android:id="@+id/player_b_notifications"
+                    style="@style/NotificationAreas" />
+
+
+                <LinearLayout
+                    style="@style/SetBoxes">
+
+                    <TextView
+                        style="@style/SetsWord" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/player_b_score_set1"
+                            style="@style/SetScore" />
+
+                        <TextView
+                            android:id="@+id/player_b_score_set2"
+                            style="@style/SetScore" />
+
+                        <TextView
+                            android:id="@+id/player_b_score_set3"
+                            style="@style/SetScore" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <Button
+                    style="@style/ButtonsPortrait"
+                    android:onClick="pointForPlayerB"
+                    android:text="@string/point_button" />
+
+                <Button
+                    style="@style/ButtonsPortrait"
+                    android:onClick="faultForPlayerB"
+                    android:text="@string/fault_button" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bigLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="32dp"
+            android:layout_marginTop="48dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:background="@drawable/buttons_border"
+            android:layout_alignParentBottom="true"
+            android:onClick="resetScore"
+            android:text="@string/reset_button" />
+
+    </RelativeLayout>
+
+</ScrollView>
