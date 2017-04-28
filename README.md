@@ -17,7 +17,8 @@ This project is currently on the 0.86 version, relesaed on 28/04/2017.
 
 ### V0.86 - 28/04/2017
 #### Improvements:
-- resources for XML used massively.
+- resources for XML used massively;
+- first time I cleaned the app.
 
 ### V0.85 - 12/04/2017
 #### Improvements:
